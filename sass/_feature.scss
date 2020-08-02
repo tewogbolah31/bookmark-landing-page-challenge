@@ -1,0 +1,119 @@
+.feature{
+
+  &__text{
+    font-size: 1.6rem;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    line-height: 1.4;
+
+    @media only screen and (max-width: 50em) {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    &--2{
+      font-size: 1.6rem;
+    }
+  }
+
+  &__book{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 25%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1;
+
+    @media only screen and (max-width: 43.75em) {
+      width: 60%;
+      margin: 0 20%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      display: block;
+      width: 80%;
+      margin: 0 10%;
+      text-align: center;
+      padding-bottom: 0;
+      border-top: 1px solid #ddd;
+      & > *{
+
+        &:not(:last-child){
+          border-bottom: 1px solid #ddd;
+        }
+      }
+    }
+
+
+    &--1{
+      color: #000;
+      &::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid hsl(0, 94%, 66%);
+        transform: translateY(2.2rem);
+        position: relative;
+        z-index: 5;
+      }
+    }
+  }
+
+  &__paragraph{
+
+    @media only screen and (max-width: 37.5em) {
+      padding: 2rem 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__box{
+    margin-top: 8rem;
+    display: flex;
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
+
+  &__hero{
+    padding: 1rem;
+    position: relative;
+    &::before{
+      display: block;
+      content: "";
+      height: 80%;
+      width: 80%;
+      background-color: hsl(231, 69%, 60%);
+      position: absolute;
+      left: 0;
+      top: 25%;
+      clip-path: ellipse(99% 50% at 0% 50%);
+      z-index: 5;
+    }
+  }
+
+  &__img{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__content{
+    font-size: 1.5rem;
+    margin-left: auto;
+    padding: 6rem;
+    padding-right: 0;
+    flex: 0 0 50%;
+
+    @media only screen and (max-width: 37.5em) {
+      padding: 3rem;
+      margin-top: 2rem;
+    }
+  }
+}

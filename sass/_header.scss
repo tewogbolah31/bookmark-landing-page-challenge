@@ -1,0 +1,90 @@
+.header{
+  display: flex;
+  font-size: 1.6rem;
+
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column-reverse;
+  }
+
+  &__box{
+    margin-right: auto;
+    padding: 6rem;
+    padding-left: 0;
+
+    @media only screen and (max-width: 56.25em) {
+      padding: 3rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      margin-top: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__hero{
+    flex: 0 0 50%;
+    position: relative;
+    padding: 1rem;
+
+    @media only screen and (max-width: 50em) {
+      padding: 0;
+    }
+    &::after{
+      display: block;
+      content: "";
+      height: 80%;
+      width: 80%;
+      background-color: hsl(231, 69%, 60%);
+      position: absolute;
+      right: 0;
+      top: 25%;
+      clip-path: ellipse(99% 49% at 99% 50%);
+      z-index: 5;
+    }
+  }
+
+  &__list{
+    list-style: none;
+  }
+
+  &__item{
+    display: inline-block;
+    font-size: 1.5rem;
+    @media only screen and (max-width: 43.75em) {
+      display: block;
+    }
+    @media only screen and (max-width: 37.5em) {
+      display: block;
+    }
+    &:not(:last-child){
+      margin-right: 2rem;
+
+      @media only screen and (max-width: 50em) {
+        margin-right: 1rem;
+      }
+
+      @media only screen and (max-width: 43.75em) {
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__text{
+    width: 80%;
+    @media only screen and (max-width: 37.5em) {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  &__img{
+    position: relative;
+    width: 100%;
+    z-index: 10;
+  }
+}

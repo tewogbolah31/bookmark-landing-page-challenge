@@ -1,0 +1,44 @@
+.question{
+  padding: 4rem 0;
+
+  &__text{
+    font-size: 1.6rem;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+
+    @media only screen and (max-width: 37.5em) {
+      width: 80%;
+      margin: 0 10%;
+    }
+  }
+
+  &__box{
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 1.5rem;
+
+    @media only screen and (max-width: 37.5em) {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+
+  &__content{
+    text-align: center;
+    color: #000;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsl(229, 8%, 60%);
+    padding: 2rem 0;
+
+    &:last-of-type{
+      border-bottom: 1px solid hsl(229, 8%, 60%);
+      margin-bottom: 4rem;
+    }
+  }
+}

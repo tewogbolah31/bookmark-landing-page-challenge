@@ -1,0 +1,68 @@
+.work{
+  padding: 10rem 0;
+  @media only screen and (max-width: 37.5em) {
+    padding: 6rem 0;
+  }
+
+  @media only screen and (max-width: 20em) {
+    padding: 4rem 0;
+  }
+
+  &__text{
+    font-size: 1.6rem;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+
+    @media only screen and (max-width: 37.5em){
+      width: 80%;
+      margin: 0 10%;
+    }
+  }
+
+  &__box{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    padding: 2.5rem 1rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 .5rem .7rem rgba(0, 0, 0, .3);
+
+    @media only screen and (max-width: 50em) {
+      width: 90%;
+      margin: 0 5%;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      width: 70%;
+      margin: 0 15%;
+    }
+
+    &--2{
+      margin-top: 3rem;
+      @media only screen and (max-width: 37.5em) {
+        margin-top: 0;
+      }
+    }
+
+    &--3{
+      margin-top: 6rem;
+      @media only screen and (max-width: 37.5em) {
+      margin-top: 0;
+    }
+    }
+  }
+
+  &__dot{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__logo{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
